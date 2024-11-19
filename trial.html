@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper Testimonial Carousel</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 4 Navbar Example</title>
+  <link rel="stylesheet" href="/asset/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/asset/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/asset/unpkg/aos.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Include Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile {
+      max-width: 600px;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .profile img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .profile span {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        width: 50px;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <div class="swiper mySwiper3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="profile">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <img src="../assets/images/img/test-one.webp" alt="profile">
+                            <span>ISABELLA MORGAN</span>
+                          </div>
+                          <p>
+                            Hi, my name is Isabella. I joined Learn4Lead for my CompTIA certification training.
+                            The mentors were highly qualified and helped me get through each module easily.
+                            Also assisted in my placement.
+                          </p>
+                        </div>
+                      </div>
+                
+                      <div class="swiper-slide">
+                        <div class="profile">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <img src="../assets/images/img/test-two.webp" alt="profile">
+                            <span>MIA</span>
+                          </div>
+                          <p>
+                            Thanks, Learn4Lead for providing me with a discounted CISA exam voucher.
+                            I got the CISA exam voucher at the most affordable price.
+                            Would recommend Learn4Lead for anyone seeking discounted exam vouchers.
+                          </p>
+                        </div>
+                      </div>
+                
+                      <div class="swiper-slide">
+                        <div class="profile">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <img src="../assets/images/img/test-three.webp" alt="profile">
+                            <span>HENRY JOE</span>
+                          </div>
+                          <p>
+                            Getting training at Learn4Lead was my best decision! I enrolled for
+                            AWS Cloud Practitioner certification training, and the sessions were
+                            really interactive. Got the chance to work on live projects! Thanks a lot.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <!-- Swiper Navigation Buttons -->
+                    <div class="swiper-button-next custom-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-5bd66f44dcb3f960"></div>
+                    <div class="swiper-button-prev custom-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-5bd66f44dcb3f960"></div>
+
+                  </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque molestiae, nisi, voluptate, esse autem dolorum unde iusto dolor inventore laudantium pariatur officiis. Praesentium dolores, delectus ratione reprehenderit non illo placeat.</p>
+            </div>
+        </div>
+    </div>
+
+  <!-- Swiper Container -->
+  
+
+  <!-- Include Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="/asset/unpkg/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper3", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+    //   autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    //   },
+      breakpoints: {
+        768: {
+          slidesPerView: 1,
+        },
+        1024: {
+          slidesPerView: 1,
+        }
+      },
+    });
+  </script>
+</body>
+</html>
