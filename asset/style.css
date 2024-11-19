@@ -555,7 +555,7 @@ a {
 }
 .discount__support {
     background: #064f9a;
-    background-image: url(/img/download.webp);
+    background-image: url(img/download.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
