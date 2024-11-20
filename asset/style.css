@@ -533,7 +533,7 @@ a {
 
 .joinwithus {
     background-image: linear-gradient(145deg, rgba(4, 48, 131, 0.43), transparent),
-    url('img/working-computer.jpg');
+    url('/img/working-computer.jpg');
     /* background-image: url(/img/working-computer.jpg); */
     /* background-image: url(/img/join.webp); */
     background-size: cover;
